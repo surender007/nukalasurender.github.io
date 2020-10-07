@@ -1,0 +1,12 @@
+- question: diff modes of autowiring
+  ans: byName	The byName mode injects the object dependency according to name of the bean. In such case, property name and bean name must be same. It internally calls setter method.
+- question: aot compilation
+  ans: The Angular ahead-of-time (AOT) compiler converts your Angular HTML and TypeScript code into efficient JavaScript code during the build phase before the browser downloads
+- question: static method overloading and overriding
+  ans: ans
+- question: 1
+  ans: 1
+- question: 2
+  ans: 2
+- question: 3 
+  ans: 3
