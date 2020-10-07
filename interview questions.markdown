@@ -4,14 +4,10 @@ title: Interview Questions
 permalink: /interview/
 ---
 
-Interview questions and answers goes here!!
 
 <ul>
-{% for val in site.data.java %}
-  <li>
-	  <b>{{ val.question }}</b>
-      {{ val.ans }}
-   
-  </li>
-{% endfor %}
+   {% for item in site.data.samplelist.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
 </ul>
+

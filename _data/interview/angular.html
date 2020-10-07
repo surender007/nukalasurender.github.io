@@ -1,0 +1,31 @@
+---
+permalink: /angular.html
+layout: default
+---
+
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div>
+<h3>Angular here</h3>
+<ul>
+{% for val in site.data.angular %}
+  <li>
+	  <b>{{ val.question }}</b>
+      {{ val.ans }}
+   
+  </li>
+{% endfor %}
+</ul>
+</div>

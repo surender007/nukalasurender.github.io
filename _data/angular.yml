@@ -1,0 +1,6 @@
+- question: AOT compilation
+  ans: The Angular ahead-of-time (AOT) compiler converts your Angular HTML and TypeScript code into efficient JavaScript code during the build phase before the browser downloads and runs that code. Compiling your application during the build process provides a faster rendering in the browser.
+- question: Declarations vs Providers
+  ans: <i>Declarations</i> are to make directives (including components and pipes) from the current module available to other directives in the current module. Selectors of          directives, components or pipes are only matched against the HTML if they are declared or imported.
+    <br><i>Providers</i> are to make services and values known to DI (dependency injection). They are added to the root scope and they are injected to other services or directives that have them as dependency.
+- question: static method overloading and overriding

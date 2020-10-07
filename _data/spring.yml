@@ -1,0 +1,20 @@
+- question: Common implementatons of application context
+  ans: | 
+    The three commonly used implementation of 'Application Context' are <br><b>ClassPathXmlApplicationContext:</b> It Loads context definition from an XML file located in the classpath, treating context definitions as classpath resources. The application context is loaded from the application's classpath by using the code. ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml"); <br><b>FileSystemXmlApplicationContext:</b> It loads context definition from an XML file in the filesystem. The application context is loaded from the file system by using the code. ApplicationContext context = new FileSystemXmlApplicationContext("bean.xml"); <br><b>XmlWebApplicationContext:</b> It loads context definition from an XML file contained within a web application.
+- question: Bean scopes in spring
+  ans: |- 
+    Different types of bean scopes in the Spring framework. 
+    The scope of a bean defines the life cycle and visibility of that bean in the contexts in which it is used.
+    The latest version of Spring framework defines 6 types of scopes -  
+    singleton<br>
+    prototype<br>
+    request<br>
+    session<br> 
+    application <br>
+    websocket
+    The last four scopes mentioned request, session, application and websocket are only available in a web-aware application.
+- question: Diff modes of autowiring
+  ans: >- 
+    byName	The byName mode injects the object dependency according to name of the bean. In such case, property name and bean name must be same. It internally calls setter method.
+    <br>byType	The byType mode injects the object dependency according to type. So property name and bean name can be different. It internally calls setter method.
+    <br>constructor	The constructor mode injects the dependency by calling the constructor of the class. It calls the constructor having large number of parameters.
